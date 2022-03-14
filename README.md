@@ -8,15 +8,15 @@ Prefer working in R? No problem! Check out Medinet ParsePy’s sister package [M
 
 The following steps describe how to install `medinetparsepy` from GitHub.
 
-### 1. In the shell, use *pip* to download the package.
+### 1. In the shell, use *pip* to download the package
 
 ```bash
 pip install git+https://github.com/JonasEngstrom/medinetparsepy
 ```
 
-### 2. Start Python.
+### 2. Start Python
 
-### 3. Import the needed functions.
+### 3. Import the needed functions
 
 #### Method 1
 
