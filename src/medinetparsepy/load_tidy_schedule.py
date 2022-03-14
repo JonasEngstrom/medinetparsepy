@@ -6,6 +6,15 @@ import numpy
 
 
 def load_tidy_schedule(file_path: str) -> pandas.DataFrame:
+    """
+    Loads a HTML file from Medinet and returns the schedule as a tidy Pandas
+    DataFrame.
+
+    :param file_path: String containing the path to the HTML file.
+    :type file_path: str
+    :return: A tidy data frame conteining the schedule data for analysis.
+    :rtype: pandas.DataFrame
+    """
     with open(file_path, encoding='latin-1') as file_object:
         file_data = bs4.BeautifulSoup(file_object, 'html.parser')
 
