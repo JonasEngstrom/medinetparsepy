@@ -11,6 +11,7 @@ setuptools.setup(name="medinetparsepy",
                  install_requires=[
                      'bs4',
                      'pandas',
+                     'matplotlib',
                      'numpy'
                  ],
                  package_dir={"": "src"},
