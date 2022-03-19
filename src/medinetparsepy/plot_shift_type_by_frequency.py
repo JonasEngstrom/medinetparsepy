@@ -5,7 +5,7 @@ import pandas
 import medinetparsepy.get_min_max_dates
 
 
-def plot_shift_type_by_frequency(tidy_schedule: pandas.DataFrame):
+def plot_shift_type_by_frequency(tidy_schedule: pandas.DataFrame) -> tuple:
     """
     Plots a bar graph of shift type frequencies.
 
