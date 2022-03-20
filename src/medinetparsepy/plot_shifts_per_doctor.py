@@ -9,10 +9,10 @@ def plot_shifts_per_doctor(tidy_schedule: pandas.DataFrame) -> tuple:
     """
     Plots a bar graph of the total shifts per doctor, stacked by shift type.
 
-    :param tidy_schedule: A tibble containing a schedule, as loaded by
+    :param tidy_schedule: A data frame containing a schedule, as loaded by
     load_tidy_schedule().
     :type tidy_schedule: pandas.DataFrame
-    :return: A tuple with a figure and axis containing a matplotlib stacked
+    :return: A tuple with a figure and an axis containing a matplotlib stacked
     bar graph.
     :rtype: tuple
     """

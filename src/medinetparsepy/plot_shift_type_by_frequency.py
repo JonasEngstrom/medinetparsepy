@@ -12,7 +12,8 @@ def plot_shift_type_by_frequency(tidy_schedule: pandas.DataFrame) -> tuple:
     :param tidy_schedule: A pandas data frame containing a schedule,
     as loaded by load_tidy_schedule().
     :type tidy_schedule: pandas.DataFrame
-    :return: A tuple with a figure and axis containing a matplotlib bar graph.
+    :return: A tuple with a figure and an axis containing a matplotlib bar
+    graph.
     :rtype: tuple
     """
     return_data = (
