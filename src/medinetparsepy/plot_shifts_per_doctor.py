@@ -2,7 +2,8 @@
 
 import matplotlib.pyplot
 import pandas
-import medinetparsepy.tally_shifts
+from medinetparsepy.tally_shifts import tally_shifts
+from medinetparsepy.get_min_max_dates import get_min_max_dates
 
 
 def plot_shifts_per_doctor(tidy_schedule: pandas.DataFrame) -> tuple:
@@ -18,7 +19,7 @@ def plot_shifts_per_doctor(tidy_schedule: pandas.DataFrame) -> tuple:
     """
     fig, ax = matplotlib.pyplot.subplots()
 
-    plotting_frame = medinetparsepy.tally_shifts.tally_shifts(tidy_schedule)
+    plotting_frame = tally_shifts(tidy_schedule)
 
     (
         plotting_frame
@@ -28,7 +29,7 @@ def plot_shifts_per_doctor(tidy_schedule: pandas.DataFrame) -> tuple:
         .plot(kind='barh', stacked=True, ax=ax)
     )
 
-    dates = medinetparsepy.get_min_max_dates.get_min_max_dates(tidy_schedule)
+    dates = get_min_max_dates(tidy_schedule)
 
     ax.set_xlabel('Shift Count')
     ax.set_ylabel('Doctor')

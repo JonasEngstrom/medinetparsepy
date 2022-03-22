@@ -20,6 +20,8 @@ def tally_shifts(tidy_schedule: pandas.DataFrame) -> pandas.DataFrame:
         .reset_index()
         .pivot(index='doctor_name', columns='shift_type')
         .droplevel(0, axis=1)
+        .fillna(0)
+        .astype(int)
     )
 
     return return_table
